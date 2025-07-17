@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Archivos de NicePage -->
+  <link rel="stylesheet" href="nicepage.css" media="screen" />
+  <link rel="stylesheet" href="Acerca-de.css" media="screen" />
+  <script class="u-script" type="text/javascript" src="jquery.js" defer></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer></script>
+
+  <!-- Estilo personalizado -->
+ <style>
+  .contenedor-botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; /* Espacio entre botones */
+    margin-top: 20px;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('imagenes/logo elam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 40px;
+    margin: 0;
+    position: relative;
+  }
+
+  .boton-principal {
+    padding: 15px 25px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px; /* márgenes laterales */
+    display: inline-block;
+  }
+
+  .boton-principal:hover {
+    background-color: #c0392b;
+  }
+
+
+    .subtarjeta {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tarjeta {
+      width: 220px;
+      background-color: #ffffffcc;
+      color: #000;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .tarjeta img {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .titulo-medicamento {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+
+    .contenido {
+      max-height: 3.2em;
+      overflow: hidden;
+      position: relative;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .contenido.expandido {
+      max-height: none;
+    }
+
+    .leer-mas {
+      display: block;
+      color: #3498db;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px 0;
+      text-align: center;
+      user-select: none;
+    }
+
+    .leer-mas:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="u-body u-xl-mode" data-lang="es">
+
+  <!-- Navegación -->
+  <header class="u-clearfix u-header u-header" id="header">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menú principal">
+        <div class="menu-collapse">
+          <a class="u-button-style u-nav-link u-hamburger-link" href="#" aria-label="Abrir menú">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" id="menu-hamburger" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="./">Inicio</a></li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Botones de categorías en línea -->
+<div class="contenedor-botones">
+  <button class="boton-principal" onclick="mostrarCategoria('cardio')">🫀 Cardiovasculares</button>
+  <button class="boton-principal" onclick="mostrarCategoria('diabetes')">🩸 Antidiabéticos</button>
+  <button class="boton-principal" onclick="mostrarCategoria('OTC')"> Venta libre</button>
+   
+</div>
+
+<!-- CARDIOVASCULARES -->
+<div id="cardio" class="subtarjeta">
+  <div class="tarjeta">
+    <img src="imagenes/Cardiok-plus-D-320-10-25.png" alt="Cardiok-plus-D-320-10-25" />
+    <div class="titulo-medicamento">Cardiok-plus-D-320-10-25</div>
+    <div class="contenido" id="desc1">
+      <p>Contiene Valsartán, Amlodipino y un diurético. Se usa para tratar presión arterial alta difícil de controlar. Tomar 1 vez al día, con o sin alimentos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc1', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Losartan 50.png" alt="Losartán 50" />
+    <div class="titulo-medicamento">Losartán 50</div>
+    <div class="contenido" id="desc2">
+      <p>Contiene Losartán potásico. Ayuda a reducir la presión y proteger los riñones. Tomar 1 tableta diaria, preferiblemente por la mañana.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc2', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/aracure 32.jpeg" alt="Aracure 32" />
+    <div class="titulo-medicamento">Aracure 32</div>
+    <div class="contenido" id="desc3">
+      <p>Contiene Candesartán. Indicado para presión arterial alta y evitar fallos cardíacos. Tomar 1 vez al día sin interrumpir el tratamiento.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc3', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Aracure 8.jpg" alt="Aracure 8" />
+    <div class="titulo-medicamento">Aracure 8</div>
+    <div class="contenido" id="desc4">
+      <p>Contiene Candesartán. Se usa en hipertensión leve o en combinación. Tomar 1 tableta al día, siempre a la misma hora.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc4', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Aracure 16.jpg" alt="Aracure 16" />
+    <div class="titulo-medicamento">Aracure 16</div>
+    <div class="contenido" id="desc5">
+      <p>Contiene Candesartán. Ideal para presión moderada. Tomar 1 tableta diaria con agua, sin masticar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc5', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Aracureh32.jpg" alt="Aracure h32" />
+    <div class="titulo-medicamento">Aracure h32</div>
+    <div class="contenido" id="desc6">
+      <p>Contiene Candesartán e hidroclorotiazida. Ayuda a eliminar líquidos y bajar la presión. Tomar 1 vez al día en la mañana.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc6', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Aracureh16.jpg" alt="Aracureh16" />
+    <div class="titulo-medicamento">Aracure h16</div>
+    <div class="contenido" id="desc7">
+      <p>Combinación de Candesartán e hidroclorotiazida. Se usa para hipertensión con retención de líquidos. Tomar 1 vez al día.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc7', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/BISOPROLOL2.5.jpg" alt="BISOPROLOL2.5" />
+    <div class="titulo-medicamento">Bisoprolol 2.5</div>
+    <div class="contenido" id="desc8">
+      <p>Contiene Bisoprolol. Reduce la presión y frecuencia del corazón. Se toma una vez al día por la mañana.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc8', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/BISOPROLOL5.jpg" alt="BISOPROLOL5" />
+    <div class="titulo-medicamento">Bisoprolol 5</div>
+    <div class="contenido" id="desc9">
+      <p>Beta bloqueador que disminuye la carga del corazón. Se toma 1 tableta diaria, siempre a la misma hora.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc9', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Coralegre 100Mg.png" alt="Coralegre-100Mg" />
+    <div class="titulo-medicamento">Coralegre-100Mg</div>
+    <div class="contenido" id="desc10">
+      <p>Contiene Metoprolol. Controla arritmias, presión y angina. Se recomienda una toma diaria sin partir la tableta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc10', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/betauno 5Mg.png" alt="Betauno 5Mg" />
+    <div class="titulo-medicamento">Betauno 5Mg</div>
+    <div class="contenido" id="desc11">
+      <p>Contiene Nebivolol. Baja la presión y mejora la función de los vasos. Se toma una vez al día.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc11', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Betauno 2.5Mg.png" alt="Betauno 2.5Mg" />
+    <div class="titulo-medicamento">Betauno 2.5Mg</div>
+    <div class="contenido" id="desc12">
+      <p>Nebivolol en dosis baja para presión ligera o combinada. Tomar diariamente a la misma hora.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc12', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Presnife retard 60Mg.png" alt="Presnife retard 60" />
+    <div class="titulo-medicamento">Presnife retard 60</div>
+    <div class="contenido" id="desc13">
+      <p>Contiene Nifedipino de liberación lenta. Reduce la presión y el dolor de pecho. No triturar ni masticar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc13', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Presnife retard 30Mg.png" alt="Presnife retard 30Mg" />
+    <div class="titulo-medicamento">Presnife retard 30Mg</div>
+    <div class="contenido" id="desc14">
+      <p>Nifedipino en forma prolongada. Se usa para presión o angina leve. Tomar 1 vez al día sin romper la cápsula.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc14', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Clocard 75Mg.png" alt="clocard 75Mg" />
+    <div class="titulo-medicamento">Clocard 75Mg</div>
+    <div class="contenido" id="desc15">
+      <p>Contiene Clopidogrel. Evita formación de coágulos. Se toma una tableta diaria, preferiblemente a la misma hora.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc15', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Valscard 160Mg.png" alt="Valscard 160Mg" />
+    <div class="titulo-medicamento">Valscard 160Mg</div>
+    <div class="contenido" id="desc16">
+      <p>Contiene Valsartán. Disminuye la presión y protege el corazón luego de un infarto. Tomar 1 vez al día.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc16', this)">Leer más</span>
+  </div>
+</div>
+
+<!-- ANTIDIABÉTICOS -->
+<div id="diabetes" class="subtarjeta">
+
+  <!-- Glucovance -->
+  <div class="tarjeta">
+    <img src="imagenes/Glucovance 500 2.5.png" alt="Glucovance 500 2.5" />
+    <div class="titulo-medicamento">Glucovance 500 2.5 Mg</div>
+    <div class="contenido" id="descDia1" style="display:none;">
+      <p>Uso: Dosis baja, usada al iniciar tratamiento o en combinación con otros medicamentos.<br>
+      🔹 Función: Ayuda a controlar el azúcar en sangre en personas con diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia1', this)">Leer más</span>
+  </div>
+
+  <!-- Glibenclamida -->
+  <div class="tarjeta">
+    <img src="imagenes/Glibenclamida 5mg.png" alt="Glibenclamida" />
+    <div class="titulo-medicamento">Glibenclamida 5Mg</div>
+    <div class="contenido" id="descDia2" style="display:none;">
+      <p>Estimula el páncreas para que libere más insulina. Se recomienda tomar antes del desayuno o primera comida.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia2', this)">Leer más</span>
+  </div>
+
+  <!-- Jarinu 25 -->
+  <div class="tarjeta">
+    <img src="imagenes/jarinu 25.png" alt="Jarinu 25" />
+    <div class="titulo-medicamento">Jarinu 25 Mg</div>
+    <div class="contenido" id="descDia3" style="display:none;">
+      <p>Ayuda a reducir el azúcar en sangre en personas con diabetes tipo 2 al mejorar la acción de la insulina. Se toma una vez al día, con o sin alimentos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia3', this)">Leer más</span>
+  </div>
+
+  <!-- Mediabet G 500/1000 -->
+  <div class="tarjeta">
+    <img src="imagenes/mediabet-g-500-1000.png" alt="Mediabet G 500/1000" />
+    <div class="titulo-medicamento">Mediabet G 500/1000</div>
+    <div class="contenido" id="descDia4" style="display:none;">
+      <p>Combinación de Metformina 500 mg y Glibenclamida 1000 mcg. Controla el azúcar en sangre en diabetes tipo 2. Tomar según indicación médica.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia4', this)">Leer más</span>
+  </div>
+
+  <!-- Mediabet G 850/250 -->
+  <div class="tarjeta">
+    <img src="imagenes/mediabet-g-850-250.png" alt="Mediabet G 850/250" />
+    <div class="titulo-medicamento">Mediabet G 850/250</div>
+    <div class="contenido" id="descDia5" style="display:none;">
+      <p>Metformina 850 mg + Glibenclamida 250 mcg. Usado para mejorar el control glucémico en diabetes tipo 2. Tomar con alimentos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia5', this)">Leer más</span>
+  </div>
+
+  <!-- Viltrevan M 50 -->
+  <div class="tarjeta">
+    <img src="imagenes/viltrevan-m-50.png" alt="Viltrevan M 50" />
+    <div class="titulo-medicamento">Viltrevan M 50</div>
+    <div class="contenido" id="descDia6" style="display:none;">
+      <p>Metformina 500 mg. Controla niveles de glucosa en sangre para diabetes tipo 2. Tomar con comidas para evitar molestias gástricas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia6', this)">Leer más</span>
+  </div>
+
+  <!-- Viltrevan M 850 -->
+  <div class="tarjeta">
+    <img src="imagenes/viltrevan-m-850.png" alt="Viltrevan M 850" />
+    <div class="titulo-medicamento">Viltrevan M 850</div>
+    <div class="contenido" id="descDia7" style="display:none;">
+      <p>Metformina 850 mg. Controla el azúcar en sangre, indicado para diabetes tipo 2. Usar según prescripción médica.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia7', this)">Leer más</span>
+  </div>
+
+  <!-- Vildina 50 -->
+  <div class="tarjeta">
+    <img src="imagenes/vildina-50.png" alt="Vildina 50" />
+    <div class="titulo-medicamento">Vildina 50</div>
+    <div class="contenido" id="descDia8" style="display:none;">
+      <p>Sitagliptina 50 mg. Controla glucosa en sangre en diabetes tipo 2. Tomar una vez al día con o sin alimentos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia8', this)">Leer más</span>
+  </div>
+
+  <!-- Vildina 100 -->
+  <div class="tarjeta">
+    <img src="imagenes/vildina-100.png" alt="Vildina 100" />
+    <div class="titulo-medicamento">Vildina 100</div>
+    <div class="contenido" id="descDia9" style="display:none;">
+      <p>Sitagliptina 100 mg. Ayuda a controlar el azúcar en sangre. Tomar según indicaciones médicas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia9', this)">Leer más</span>
+  </div>
+
+  <!-- Glucoda 10 -->
+  <div class="tarjeta">
+    <img src="imagenes/glucoda-10.png" alt="Glucoda 10" />
+    <div class="titulo-medicamento">Glucoda 10</div>
+    <div class="contenido" id="descDia10" style="display:none;">
+      <p>Glimepirida 10 mg. Medicamento para el control de la glucosa en sangre en pacientes con diabetes tipo 2. Se recomienda tomar antes del desayuno.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDia10', this)">Leer más</span>
+  </div>
+
+</div>
+
+ <!-- Scripts -->
+  <script>
+    function mostrarCategoria(id) {
+      const secciones = document.querySelectorAll('.subtarjeta');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function toggleLeerMas(id, btn) {
+      const texto = document.getElementById(id);
+      if (texto.classList.contains('expandido')) {
+        texto.classList.remove('expandido');
+        btn.textContent = 'Leer más';
+      } else {
+        texto.classList.add('expandido');
+        btn.textContent = 'Leer menos';
+      }
+    }
+  </script>
+  
+
+
+    
+  </script>
+  <!-- OTC -->
+  
+
+   <div id="OTC" class="subtarjeta">
+  <div class="tarjeta">
+    <img src="imagenes/Sumigran.png" alt="Sumigran" />
+    <div class="titulo-medicamento">Sumigran</div>
+    <div class="contenido" id="OTC0">
+      <p>Para migrañas fuertes. Tomar 1 tableta al inicio del dolor.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC1', this)">Leer más</span>
+  </div>
+
+  
+
+  <div class="tarjeta">
+    <img src="imagenes/Algho.png" alt="Algho" />
+    <div class="titulo-medicamento">Algho</div>
+    <div class="contenido" id="OTC3">
+      <p>Analgésico general para dolores leves o moderados.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC3', this)">Leer más</span>
+  </div>
+
+ 
+
+  <div class="tarjeta">
+    <img src="imagenes/Garwell.png" alt="Garwell" />
+    <div class="titulo-medicamento">Garwell</div>
+    <div class="contenido" id="OTC6">
+      <p>Descongestionante para aliviar nariz tapada y problemas respiratorios.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC6', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/LaritoxTe.png" alt="Laritox Té" />
+    <div class="titulo-medicamento">Laritox Té</div>
+    <div class="contenido" id="OTC7">
+      <p>Té herbal para aliviar la garganta irritada y la tos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC7', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/PainMaxTeAntigripal.png" alt="Pain Max Té Antigripal" />
+    <div class="titulo-medicamento">Pain Max Té Antigripal</div>
+    <div class="contenido" id="OTC8">
+      <p>Té para aliviar síntomas gripales, fiebre y malestar general.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC8', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/PainMaxAntigripal.png" alt="Pain Max Antigripal" />
+    <div class="titulo-medicamento">Pain Max Antigripal</div>
+    <div class="contenido" id="OTC9">
+      <p>Pastillas para aliviar la gripe, fiebre y dolores leves.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC9', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/TabcinDia.png" alt="Tabcin Día" />
+    <div class="titulo-medicamento">Tabcin Día</div>
+    <div class="contenido" id="OTC10">
+      <p>Medicamento antigripal para uso diurno, reduce fiebre y congestión.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC10', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Winasorbultra.jpg" alt="Winasorb Ultra" />
+    <div class="titulo-medicamento">Winasorb Ultra</div>
+    <div class="contenido" id="OTC11">
+      <p>Jarabe que alivia dolores de cabeza intensos y fiebre rápidamente.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC11', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/WinasorbMultisintomas.png" alt="Winasorb Gripe Multisíntomas" />
+    <div class="titulo-medicamento">Winasorb Gripe Multisíntomas</div>
+    <div class="contenido" id="OTC12">
+      <p>Jarabe para aliviar fiebre, dolor y congestión de la gripe.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC12', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/WinasorbCongestion.png" alt="Winasorb Congestión" />
+    <div class="titulo-medicamento">Winasorb Congestión</div>
+    <div class="contenido" id="OTC13">
+      <p>Jarabe para descongestionar nariz tapada y aliviar presión sinusal.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC13', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/GelnorexVita.png" alt="Gelnorex Vita" />
+    <div class="titulo-medicamento">Gelnorex Vita</div>
+    <div class="contenido" id="OTC14">
+      <p>Multivitamínico en pastilla con gelatina para recuperación general.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC14', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Vinacard.png" alt="Vinalard" />
+    <div class="titulo-medicamento">Vinalard</div>
+    <div class="contenido" id="OTC15">
+      <p> es una vitamina liposoluble que se disuelve en la grasa y resulta esencial para el organismo dado que es un antioxidante que ayuda a proteger los ácidos grasos..</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC15', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Ponstan.png" alt="Ponstan" />
+    <div class="titulo-medicamento">Ponstan</div>
+    <div class="contenido" id="OTC16">
+      <p>Analgésico y antiinflamatorio para dolores musculares y articulares.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC16', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Dorival.png" alt="Dorival" />
+    <div class="titulo-medicamento">Dorival</div>
+    <div class="contenido" id="OTC17">
+      <p>Alivia cólicos menstruales y dolores leves. Tabletas fáciles de tomar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('dOTC17', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/DescongelGripe.png" alt="Descongel Gripe" />
+    <div class="titulo-medicamento">Descongel Gripe</div>
+    <div class="contenido" id="OTC18">
+      <p>Antigripal con descongestionante para aliviar síntomas respiratorios.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC18', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Chemitusin.png" alt="Chemitusin" />
+    <div class="titulo-medicamento">Chemitusin</div>
+    <div class="contenido" id="OTC19">
+      <p>Jarabe para aliviar la tos seca y reducir irritación.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC19', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Cortax.png" alt="Cortax" />
+    <div class="titulo-medicamento">Cortax</div>
+    <div class="contenido" id="OTC20">
+      <p>Antiinflamatorio para aliviar dolor y reducir inflamaciones.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC20', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Cecitro.png" alt="Cecitro" />
+    <div class="titulo-medicamento">Cecitro</div>
+    <div class="contenido" id="OTC21">
+      <p>Antialérgico para síntomas de alergia, como estornudos y picazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC21', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/BroncochemTe.png" alt="Broncochem Té" />
+    <div class="titulo-medicamento">Broncochem Té</div>
+    <div class="contenido" id="OTC22">
+      <p>Té para aliviar bronquitis, tos y problemas respiratorios leves.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC22', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Alerplus.png" alt="Alerplus" />
+    <div class="titulo-medicamento">Alerplus</div>
+    <div class="contenido" id="OTC23">
+      <p>Antialérgico en cápsulas para reducir síntomas alérgicos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC23', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/AntifludesForte.png" alt=" Antifludes Forte" />
+    <div class="titulo-medicamento"> Antifludes Forte</div>
+    <div class="contenido" id="OTC24">
+      <p>Antigripal fuerte para síntomas severos de gripe y resfriado.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC24', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <img src="imagenes/Antifludeste.png" alt=" Antifludes te" />
+    <div class="titulo-medicamento"> Antifludes te</div>
+    <div class="contenido" id="OTC29">
+      <p>está indicado en el tratamiento de la gripe. Actúa contra el virus causante de la gripe (virus influenza tipo A), alivia los síntomas que la acompañan como fiebre, dolor muscular, dolor de cabeza, estornudos y escurrimiento nasal.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC24', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/SinedolCood.png" alt="Sinedol Cood" />
+    <div class="titulo-medicamento">Sinedol Cood</div>
+    <div class="contenido" id="OTC25">
+      <p>Analgésico con codeína para dolores intensos. Uso con precaución.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC25', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/SuprofenCold.png" alt="Suprofen Cold" />
+    <div class="titulo-medicamento">Suprofen Cold</div>
+    <div class="contenido" id="OTC26">
+      <p>Antigripal con ibuprofeno para aliviar dolor y fiebre.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC26', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/SinedolUltra.png" alt="Sinedol Ultra" />
+    <div class="titulo-medicamento">Sinedol Ultra</div>
+    <div class="contenido" id="OTC27">
+      <p>Analgésico potente para dolores severos y fiebre alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC27', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/Bienaliv.png" alt="Bienaliv" />
+    <div class="titulo-medicamento">Bienaliv</div>
+    <div class="contenido" id="OTC28">
+      <p>Antigripal para síntomas leves y recuperación rápida.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC28', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <img src="imagenes/IbufarPlus.png" alt="Ibufar Plus" />
+    <div class="titulo-medicamento">Ibufar Plus</div>
+    <div class="contenido" id="OTC29">
+      <p>Combinación de ibuprofeno y paracetamol para dolor y fiebre.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('OTC29', this)">Leer más</span>
+  </div>
+
+
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function mostrarCategoria(id) {
+      const secciones = document.querySelectorAll('.subtarjeta');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function toggleLeerMas(id, btn) {
+      const texto = document.getElementById(id);
+      if (texto.classList.contains('expandido')) {
+        texto.classList.remove('expandido');
+        btn.textContent = 'Leer más';
+      } else {
+        texto.classList.add('expandido');
+        btn.textContent = 'Leer menos';
+      }
+    }
+  </script>
+  
+
+</body>
+</html>
