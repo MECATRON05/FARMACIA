@@ -145,153 +145,574 @@
   <button class="boton-principal" onclick="mostrarCategoria('cardio')">🫀 Cardiovasculares</button>
   <button class="boton-principal" onclick="mostrarCategoria('diabetes')">🩸 Antidiabéticos</button>
   <button class="boton-principal" onclick="mostrarCategoria('OTC')"> Venta libre</button>
-   
+  <button class="boton-principal" onclick="mostrarCategoria('Vitaminas_y_antioxidantes')"> Vitaminas y antioxidantes</button>
+  <button class="boton-principal" onclick="mostrarCategoria('Analgesicos')"> Analgésicos</button>
+
 </div>
 
 <!-- CARDIOVASCULARES -->
 <div id="cardio" class="subtarjeta">
+  <!-- Compuestos -->
   <div class="tarjeta">
     <img src="imagenes/Cardiok-plus-D-320-10-25.png" alt="Cardiok-plus-D-320-10-25" />
-    <div class="titulo-medicamento">Cardiok-plus-D-320-10-25</div>
+    <div class="titulo-medicamento">Cardiok-plus-D 320/10/25 mg</div>
     <div class="contenido" id="desc1">
-      <p>Contiene Valsartán, Amlodipino y un diurético. Se usa para tratar presión arterial alta difícil de controlar. Tomar 1 vez al día, con o sin alimentos.</p>
+      <p>Medicamento que combina tres sustancias para bajar la presión arterial alta cuando otros tratamientos no son suficientes.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc1', this)">Leer más</span>
   </div>
-
-  <div class="tarjeta">
-    <img src="imagenes/Losartan 50.png" alt="Losartán 50" />
-    <div class="titulo-medicamento">Losartán 50</div>
-    <div class="contenido" id="desc2">
-      <p>Contiene Losartán potásico. Ayuda a reducir la presión y proteger los riñones. Tomar 1 tableta diaria, preferiblemente por la mañana.</p>
-    </div>
-    <span class="leer-mas" onclick="toggleLeerMas('desc2', this)">Leer más</span>
-  </div>
-
-  <div class="tarjeta">
-    <img src="imagenes/aracure 32.jpeg" alt="Aracure 32" />
-    <div class="titulo-medicamento">Aracure 32</div>
-    <div class="contenido" id="desc3">
-      <p>Contiene Candesartán. Indicado para presión arterial alta y evitar fallos cardíacos. Tomar 1 vez al día sin interrumpir el tratamiento.</p>
-    </div>
-    <span class="leer-mas" onclick="toggleLeerMas('desc3', this)">Leer más</span>
-  </div>
-
-  <div class="tarjeta">
-    <img src="imagenes/Aracure 8.jpg" alt="Aracure 8" />
-    <div class="titulo-medicamento">Aracure 8</div>
-    <div class="contenido" id="desc4">
-      <p>Contiene Candesartán. Se usa en hipertensión leve o en combinación. Tomar 1 tableta al día, siempre a la misma hora.</p>
-    </div>
-    <span class="leer-mas" onclick="toggleLeerMas('desc4', this)">Leer más</span>
-  </div>
-
-  <div class="tarjeta">
-    <img src="imagenes/Aracure 16.jpg" alt="Aracure 16" />
-    <div class="titulo-medicamento">Aracure 16</div>
-    <div class="contenido" id="desc5">
-      <p>Contiene Candesartán. Ideal para presión moderada. Tomar 1 tableta diaria con agua, sin masticar.</p>
-    </div>
-    <span class="leer-mas" onclick="toggleLeerMas('desc5', this)">Leer más</span>
-  </div>
-
   <div class="tarjeta">
     <img src="imagenes/Aracureh32.jpg" alt="Aracure h32" />
-    <div class="titulo-medicamento">Aracure h32</div>
+    <div class="titulo-medicamento">Aracure H 32 mg/12.5 mg</div>
     <div class="contenido" id="desc6">
-      <p>Contiene Candesartán e hidroclorotiazida. Ayuda a eliminar líquidos y bajar la presión. Tomar 1 vez al día en la mañana.</p>
+      <p>Ayuda a bajar la presión arterial y eliminar líquidos retenidos en el cuerpo.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc6', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Aracureh16.jpg" alt="Aracureh16" />
-    <div class="titulo-medicamento">Aracure h16</div>
+    <div class="titulo-medicamento">Aracure H 16 mg/12.5 mg</div>
     <div class="contenido" id="desc7">
-      <p>Combinación de Candesartán e hidroclorotiazida. Se usa para hipertensión con retención de líquidos. Tomar 1 vez al día.</p>
+      <p>Se usa para tratar la presión alta y ayuda a eliminar el exceso de agua del cuerpo.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc7', this)">Leer más</span>
   </div>
-
+  <!-- Simples -->
+  <div class="tarjeta">
+    <img src="imagenes/Losartan 50.png" alt="Losartán 50" />
+    <div class="titulo-medicamento">Losartán 50 mg</div>
+    <div class="contenido" id="desc2">
+      <p>Sirve para bajar la presión arterial y proteger los riñones, especialmente en personas con diabetes.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc2', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <img src="imagenes/aracure 32.jpeg" alt="Aracure 32" />
+    <div class="titulo-medicamento">Aracure 32 mg</div>
+    <div class="contenido" id="desc3">
+      <p>Ayuda a controlar la presión alta y a prevenir problemas del corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc3', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <img src="imagenes/Aracure 8.jpg" alt="Aracure 8" />
+    <div class="titulo-medicamento">Aracure 8 mg</div>
+    <div class="contenido" id="desc4">
+      <p>Medicamento para tratar la presión alta leve o como complemento de otros tratamientos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc4', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <img src="imagenes/Aracure 16.jpg" alt="Aracure 16" />
+    <div class="titulo-medicamento">Aracure 16 mg</div>
+    <div class="contenido" id="desc5">
+      <p>Se usa para controlar la presión arterial y evitar complicaciones cardíacas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('desc5', this)">Leer más</span>
+  </div>
   <div class="tarjeta">
     <img src="imagenes/BISOPROLOL2.5.jpg" alt="BISOPROLOL2.5" />
-    <div class="titulo-medicamento">Bisoprolol 2.5</div>
+    <div class="titulo-medicamento">Bisoprolol 2.5 mg</div>
     <div class="contenido" id="desc8">
-      <p>Contiene Bisoprolol. Reduce la presión y frecuencia del corazón. Se toma una vez al día por la mañana.</p>
+      <p>Ayuda a bajar la presión y controlar el ritmo del corazón.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc8', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/BISOPROLOL5.jpg" alt="BISOPROLOL5" />
-    <div class="titulo-medicamento">Bisoprolol 5</div>
+    <div class="titulo-medicamento">Bisoprolol 5 mg</div>
     <div class="contenido" id="desc9">
-      <p>Beta bloqueador que disminuye la carga del corazón. Se toma 1 tableta diaria, siempre a la misma hora.</p>
+      <p>Medicamento que protege el corazón y ayuda a mantener la presión bajo control.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc9', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Coralegre 100Mg.png" alt="Coralegre-100Mg" />
-    <div class="titulo-medicamento">Coralegre-100Mg</div>
+    <div class="titulo-medicamento">Coralegre 100 mg</div>
     <div class="contenido" id="desc10">
-      <p>Contiene Metoprolol. Controla arritmias, presión y angina. Se recomienda una toma diaria sin partir la tableta.</p>
+      <p>Sirve para controlar la presión, el ritmo del corazón y prevenir dolores en el pecho.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc10', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/betauno 5Mg.png" alt="Betauno 5Mg" />
-    <div class="titulo-medicamento">Betauno 5Mg</div>
+    <div class="titulo-medicamento">Betauno 5 mg</div>
     <div class="contenido" id="desc11">
-      <p>Contiene Nebivolol. Baja la presión y mejora la función de los vasos. Se toma una vez al día.</p>
+      <p>Ayuda a bajar la presión y mejora la circulación de la sangre.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc11', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Betauno 2.5Mg.png" alt="Betauno 2.5Mg" />
-    <div class="titulo-medicamento">Betauno 2.5Mg</div>
+    <div class="titulo-medicamento">Betauno 2.5 mg</div>
     <div class="contenido" id="desc12">
-      <p>Nebivolol en dosis baja para presión ligera o combinada. Tomar diariamente a la misma hora.</p>
+      <p>Se usa para presión arterial ligera o en combinación con otros medicamentos.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc12', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Presnife retard 60Mg.png" alt="Presnife retard 60" />
-    <div class="titulo-medicamento">Presnife retard 60</div>
+    <div class="titulo-medicamento">Presnife Retard 60 mg</div>
     <div class="contenido" id="desc13">
-      <p>Contiene Nifedipino de liberación lenta. Reduce la presión y el dolor de pecho. No triturar ni masticar.</p>
+      <p>Controla la presión alta y ayuda a prevenir dolores en el pecho (angina).</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc13', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Presnife retard 30Mg.png" alt="Presnife retard 30Mg" />
-    <div class="titulo-medicamento">Presnife retard 30Mg</div>
+    <div class="titulo-medicamento">Presnife Retard 30 mg</div>
     <div class="contenido" id="desc14">
-      <p>Nifedipino en forma prolongada. Se usa para presión o angina leve. Tomar 1 vez al día sin romper la cápsula.</p>
+      <p>Ayuda a bajar la presión y a prevenir molestias en el pecho.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc14', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Clocard 75Mg.png" alt="clocard 75Mg" />
-    <div class="titulo-medicamento">Clocard 75Mg</div>
+    <div class="titulo-medicamento">Clocard 75 mg</div>
     <div class="contenido" id="desc15">
-      <p>Contiene Clopidogrel. Evita formación de coágulos. Se toma una tableta diaria, preferiblemente a la misma hora.</p>
+      <p>Evita la formación de coágulos en la sangre y protege el corazón.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc15', this)">Leer más</span>
   </div>
-
   <div class="tarjeta">
     <img src="imagenes/Valscard 160Mg.png" alt="Valscard 160Mg" />
-    <div class="titulo-medicamento">Valscard 160Mg</div>
+    <div class="titulo-medicamento">Valscard 160 mg</div>
     <div class="contenido" id="desc16">
-      <p>Contiene Valsartán. Disminuye la presión y protege el corazón luego de un infarto. Tomar 1 vez al día.</p>
+      <p>Sirve para bajar la presión y proteger el corazón después de un infarto.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('desc16', this)">Leer más</span>
+  </div>
+
+  <!-- NUEVOS MEDICAMENTOS AGREGADOS -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Aloten 25 mg</div>
+    <div class="contenido" id="cardio-aloten-25">
+      <p>Ayuda a controlar la presión arterial y protege los riñones.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-aloten-25', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Aloten 50 mg</div>
+    <div class="contenido" id="cardio-aloten-50">
+      <p>Se usa para tratar la presión alta y prevenir daños en el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-aloten-50', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Aloten 100 mg</div>
+    <div class="contenido" id="cardio-aloten-100">
+      <p>Controla la presión alta y ayuda a evitar problemas cardíacos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-aloten-100', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Atrarén 12.5 mg</div>
+    <div class="contenido" id="cardio-atraren-12">
+      <p>Diurético que ayuda a eliminar líquidos y bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-atraren-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Atrarén 25 mg</div>
+    <div class="contenido" id="cardio-atraren-25">
+      <p>Ayuda a reducir la presión y eliminar el exceso de agua del cuerpo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-atraren-25', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Araxil 5 mg</div>
+    <div class="contenido" id="cardio-araxil-5">
+      <p>Relaja los vasos sanguíneos para bajar la presión y prevenir dolores en el pecho.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-araxil-5', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Araxil 10 mg</div>
+    <div class="contenido" id="cardio-araxil-10">
+      <p>Se usa para tratar la presión alta y prevenir angina (dolor en el pecho).</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-araxil-10', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Cardilat 60 mg</div>
+    <div class="contenido" id="cardio-cardilat-60">
+      <p>Ayuda a controlar la presión y el ritmo del corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-cardilat-60', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Cardilat 90 mg</div>
+    <div class="contenido" id="cardio-cardilat-90">
+      <p>Sirve para bajar la presión y tratar problemas de ritmo cardíaco.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-cardilat-90', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Cardilat 120 mg</div>
+    <div class="contenido" id="cardio-cardilat-120">
+      <p>Controla la presión alta y ayuda en problemas del corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-cardilat-120', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Cardilat 180 mg</div>
+    <div class="contenido" id="cardio-cardilat-180">
+      <p>Se usa para tratar presión alta y arritmias cardíacas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-cardilat-180', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Cardilat 240 mg</div>
+    <div class="contenido" id="cardio-cardilat-240">
+      <p>Ayuda a controlar la presión y el ritmo del corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-cardilat-240', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Carbet 6.25 mg</div>
+    <div class="contenido" id="cardio-carbet-6">
+      <p>Medicamento para insuficiencia cardíaca y presión alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-carbet-6', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Carbet 12.5 mg</div>
+    <div class="contenido" id="cardio-carbet-12">
+      <p>Ayuda a proteger el corazón y controlar la presión.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-carbet-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Carbet 25 mg</div>
+    <div class="contenido" id="cardio-carbet-25">
+      <p>Se usa para tratar insuficiencia cardíaca y presión alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-carbet-25', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Corentel 25 mg</div>
+    <div class="contenido" id="cardio-corentel-25">
+      <p>Ayuda a bajar la presión y controlar problemas del corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-corentel-25', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Corentel 50 mg</div>
+    <div class="contenido" id="cardio-corentel-50">
+      <p>Sirve para tratar presión alta y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-corentel-50', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Corentel 100 mg</div>
+    <div class="contenido" id="cardio-corentel-100">
+      <p>Controla la presión y ayuda en problemas cardíacos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-corentel-100', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coropress 2.5 mg</div>
+    <div class="contenido" id="cardio-coropress-2">
+      <p>Medicamento para bajar la presión y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coropress-2', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coropress 5 mg</div>
+    <div class="contenido" id="cardio-coropress-5">
+      <p>Ayuda a controlar la presión y prevenir problemas cardíacos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coropress-5', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coropress 10 mg</div>
+    <div class="contenido" id="cardio-coropress-10">
+      <p>Se usa para tratar la presión alta y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coropress-10', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coracor ECA 5 mg</div>
+    <div class="contenido" id="cardio-coracor-5">
+      <p>Ayuda a bajar la presión arterial y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coracor-5', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coracor ECA 10 mg</div>
+    <div class="contenido" id="cardio-coracor-10">
+      <p>Se usa para tratar la presión alta y evitar complicaciones cardíacas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coracor-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coracor ECA 5 mg + Hidroclorotiazida 10 mg</div>
+    <div class="contenido" id="cardio-coracor-5-10">
+      <p>Combinación para bajar la presión y eliminar líquidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coracor-5-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Coracor ECA 5 mg + Hidroclorotiazida 20 mg</div>
+    <div class="contenido" id="cardio-coracor-5-20">
+      <p>Ayuda a controlar la presión y eliminar el exceso de agua del cuerpo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-coracor-5-20', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Ibertan 75 mg</div>
+    <div class="contenido" id="cardio-ibertan-75">
+      <p>Sirve para tratar la presión alta y proteger los riñones.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-ibertan-75', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Ibertan 150 mg</div>
+    <div class="contenido" id="cardio-ibertan-150">
+      <p>Ayuda a bajar la presión y prevenir daños en el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-ibertan-150', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Ibertan 300 mg</div>
+    <div class="contenido" id="cardio-ibertan-300">
+      <p>Controla la presión alta y protege los riñones.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-ibertan-300', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Iberyl 150 mg</div>
+    <div class="contenido" id="cardio-iberyl-150">
+      <p>Sirve para bajar la presión arterial y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-iberyl-150', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Iberyl 300 mg + Amlodipino 10 mg</div>
+    <div class="contenido" id="cardio-iberyl-300-10">
+      <p>Combinación para tratar la presión alta difícil de controlar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-iberyl-300-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Iberyl 300 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-iberyl-300-12">
+      <p>Ayuda a bajar la presión y eliminar líquidos retenidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-iberyl-300-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Iberyl Plus 300 mg + 10 mg + 25 mg</div>
+    <div class="contenido" id="cardio-iberyl-plus">
+      <p>Medicamento combinado para presión alta resistente.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-iberyl-plus', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 150 mg</div>
+    <div class="contenido" id="cardio-keotan-150">
+      <p>Sirve para tratar la presión alta y proteger los riñones.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-150', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 300 mg</div>
+    <div class="contenido" id="cardio-keotan-300">
+      <p>Ayuda a controlar la presión y prevenir daños en el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-300', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 300 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-keotan-300-12">
+      <p>Combinación para bajar la presión y eliminar líquidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-300-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 300 mg + Amlodipino 10 mg</div>
+    <div class="contenido" id="cardio-keotan-300-10">
+      <p>Se usa para tratar presión alta difícil de controlar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-300-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 300 mg + Amlodipino 10 mg + Hidroclorotiazida 25 mg</div>
+    <div class="contenido" id="cardio-keotan-300-10-25">
+      <p>Medicamento combinado para presión alta resistente.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-300-10-25', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Keotan 150 mg + Amlodipino 5 mg</div>
+    <div class="contenido" id="cardio-keotan-150-5">
+      <p>Combinación para tratar la presión alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-keotan-150-5', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Lotensor 2.5 mg</div>
+    <div class="contenido" id="cardio-lotensor-2">
+      <p>Ayuda a bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-lotensor-2', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Lotensor 5 mg</div>
+    <div class="contenido" id="cardio-lotensor-5">
+      <p>Se usa para tratar la presión alta y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-lotensor-5', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Lotensor 10 mg</div>
+    <div class="contenido" id="cardio-lotensor-10">
+      <p>Ayuda a controlar la presión y prevenir problemas cardíacos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-lotensor-10', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmedos 10 mg</div>
+    <div class="contenido" id="cardio-olmedos-10">
+      <p>Sirve para bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmedos-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmedos 20 mg</div>
+    <div class="contenido" id="cardio-olmedos-20">
+      <p>Ayuda a controlar la presión alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmedos-20', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmedos 40 mg</div>
+    <div class="contenido" id="cardio-olmedos-40">
+      <p>Se usa para tratar la presión alta y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmedos-40', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmesar 10 mg</div>
+    <div class="contenido" id="cardio-olmesar-10">
+      <p>Sirve para bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmesar-10', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmesar 20 mg</div>
+    <div class="contenido" id="cardio-olmesar-20">
+      <p>Ayuda a controlar la presión alta.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmesar-20', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmesar 40 mg</div>
+    <div class="contenido" id="cardio-olmesar-40">
+      <p>Se usa para tratar la presión alta y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmesar-40', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmesar 20 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-olmesar-20-12">
+      <p>Combinación para bajar la presión y eliminar líquidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmesar-20-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Olmesar 40 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-olmesar-40-12">
+      <p>Ayuda a controlar la presión y eliminar el exceso de agua del cuerpo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-olmesar-40-12', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Plaquexil (dosis variable)</div>
+    <div class="contenido" id="cardio-plaquexil">
+      <p>Ayuda a prevenir la formación de coágulos en la sangre.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-plaquexil', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 80 mg</div>
+    <div class="contenido" id="cardio-valcard-80">
+      <p>Sirve para bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-80', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 160 mg</div>
+    <div class="contenido" id="cardio-valcard-160">
+      <p>Ayuda a controlar la presión y proteger el corazón.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-160', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 320 mg</div>
+    <div class="contenido" id="cardio-valcard-320">
+      <p>Se usa para tratar la presión alta resistente.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-320', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 80 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-valcard-80-12">
+      <p>Combinación para bajar la presión y eliminar líquidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-80-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 160 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-valcard-160-12">
+      <p>Ayuda a controlar la presión y eliminar el exceso de agua del cuerpo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-160-12', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valcard 320 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-valcard-320-12">
+      <p>Combinación para presión alta difícil de controlar.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valcard-320-12', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Valscard Plus 80 mg + Hidroclorotiazida 12.5 mg</div>
+    <div class="contenido" id="cardio-valscardplus">
+      <p>Ayuda a bajar la presión y eliminar líquidos retenidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-valscardplus', this)">Leer más</span>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Venator 5 mg</div>
+    <div class="contenido" id="cardio-venator-5">
+      <p>Relaja los vasos sanguíneos para bajar la presión arterial.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-venator-5', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Venator 10 mg</div>
+    <div class="contenido" id="cardio-venator-10">
+      <p>Se usa para tratar la presión alta y prevenir dolores en el pecho.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('cardio-venator-10', this)">Leer más</span>
   </div>
 </div>
 
@@ -349,31 +770,152 @@
     <span class="leer-mas" onclick="toggleLeerMas('descDia5', this)">Leer más</span>
   </div>
 
+  <!-- Viltrovan (Vildagliptina + Metformina) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Viltrovan 50/850 mg</div>
+    <div class="contenido" id="descDiaViltrovan1">
+      <p>Combinación de vildagliptina y metformina. Se usa para mejorar el control del azúcar en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaViltrovan1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Viltrovan 50/1000 mg</div>
+    <div class="contenido" id="descDiaViltrovan2">
+      <p>Combinación de vildagliptina y metformina en dosis alta. Indicado para diabetes tipo 2 cuando se requiere mayor control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaViltrovan2', this)">Leer más</span>
+  </div>
+
   <!-- Viltrevan M 50 800-->
   <div class="tarjeta">
     <img src="imagenes/viltrevan m 50 800.png" alt="Viltrevan M 50/800" />
     <div class="titulo-medicamento">Viltrevan M 50/800</div>
     <div class="contenido" id="descDia6" >
-      <p>La combinación de vildagliptina más metformina clorhidrato está contraindicada en:
-
-·      Pacientes con hipersensibilidad conocida a la vildagliptina o a cualquiera de los excipientes del producto.
-
-·      Cetoacidosis diabética o pre-coma diabética.</p>
+      <p>La combinación de vildagliptina más metformina clorhidrato está contraindicada en:<br>
+      · Pacientes con hipersensibilidad conocida a la vildagliptina o a cualquiera de los excipientes del producto.<br>
+      · Cetoacidosis diabética o pre-coma diabética.</p>
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('descDia6', this)">Leer más</span>
   </div>
 
-
-
-  <!-- Vildina 50 -->
+  <!-- Vildina (Vildagliptina + Metformina) -->
   <div class="tarjeta">
-    <img src="imagenes/vildina-50.png" alt="Vildina 50" />
-    <div class="titulo-medicamento">Vildina 50</div>
-    <div class="contenido" id="descDia8">
-      <p>Tratamiento de la diabetes tipo 2. Como monoterapia en pacientes insuficientemente controlados por la dieta y el ejercicio solos y para quién la metformina es inadecuada debido a contraindicaciones o intolerancia.</p>
+    <div class="titulo-medicamento">Vildina 50 mg</div>
+    <div class="contenido" id="descDiaVildina1">
+      <p>Vildagliptina sola. Se usa para mejorar el control glucémico en adultos con diabetes tipo 2.</p>
     </div>
-    <span class="leer-mas" onclick="toggleLeerMas('descDia8', this)">Leer más</span>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaVildina1', this)">Leer más</span>
   </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vildina 50/850 mg</div>
+    <div class="contenido" id="descDiaVildina2">
+      <p>Combinación de vildagliptina y metformina. Indicado para diabetes tipo 2 cuando la dieta y el ejercicio no son suficientes.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaVildina2', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vildina 50/1000 mg</div>
+    <div class="contenido" id="descDiaVildina3">
+      <p>Vildagliptina + metformina en dosis alta. Mejora el control del azúcar en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaVildina3', this)">Leer más</span>
+  </div>
+
+  <!-- Glipox (Metformina + Vildagliptina) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glipox 850/50 mg</div>
+    <div class="contenido" id="descDiaGlipox1">
+      <p>Combinación de metformina y vildagliptina. Se usa para controlar la glucosa en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlipox1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glipox 1000/50 mg</div>
+    <div class="contenido" id="descDiaGlipox2">
+      <p>Metformina + vildagliptina en dosis alta. Indicado para diabetes tipo 2 cuando se requiere mayor control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlipox2', this)">Leer más</span>
+  </div>
+
+  <!-- Glucoless (Glimepirida + Metformina) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glucoless 5/500 mg</div>
+    <div class="contenido" id="descDiaGlucoless1">
+      <p>Combinación de glimepirida y metformina. Ayuda a controlar el azúcar en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlucoless1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glucoless 5/850 mg</div>
+    <div class="contenido" id="descDiaGlucoless2">
+      <p>Glimepirida + metformina en dosis mayor. Indicado para diabetes tipo 2 cuando se requiere mejor control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlucoless2', this)">Leer más</span>
+  </div>
+
+  <!-- Metfcard G (Glimepirida + Metformina) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metfcard G 2/500 mg</div>
+    <div class="contenido" id="descDiaMetfcard1">
+      <p>Combinación de glimepirida y metformina. Se usa para mejorar el control glucémico en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetfcard1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metfcard G 2/850 mg</div>
+    <div class="contenido" id="descDiaMetfcard2">
+      <p>Glimepirida + metformina en dosis mayor. Indicado para diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetfcard2', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metfcard G 4/500 mg</div>
+    <div class="contenido" id="descDiaMetfcard3">
+      <p>Combinación de glimepirida y metformina. Ayuda a controlar el azúcar en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetfcard3', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metfcard G 4/850 mg</div>
+    <div class="contenido" id="descDiaMetfcard4">
+      <p>Glimepirida + metformina en dosis alta. Indicado para diabetes tipo 2 con mayor requerimiento de control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetfcard4', this)">Leer más</span>
+  </div>
+
+  <!-- Glipixor (Glimepirida + Metformina) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glipixor 2/500 mg</div>
+    <div class="contenido" id="descDiaGlipixor1">
+      <p>Combinación de glimepirida y metformina. Se usa para el control de la glucosa en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlipixor1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Glipixor 4/850 mg</div>
+    <div class="contenido" id="descDiaGlipixor2">
+      <p>Glimepirida + metformina en dosis alta. Indicado para diabetes tipo 2 cuando se requiere mayor control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaGlipixor2', this)">Leer más</span>
+  </div>
+
+  <!-- Metford (Metformina sola) -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metford 500 mg</div>
+    <div class="contenido" id="descDiaMetford1">
+      <p>Metformina sola. Se usa para reducir los niveles de glucosa en sangre en diabetes tipo 2.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetford1', this)">Leer más</span>
+  </div>
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Metford 850 mg</div>
+    <div class="contenido" id="descDiaMetford2">
+      <p>Metformina sola en dosis mayor. Indicado para diabetes tipo 2 cuando se requiere mayor control glucémico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('descDiaMetford2', this)">Leer más</span>
+  </div>
+
+  <!-- Vildina 50 (solo una vez, ya está arriba) -->
 
   <!-- metformina 850 glibenclamida 5 -->
   <div class="tarjeta">
@@ -392,8 +934,6 @@
     </div>
     <span class="leer-mas" onclick="toggleLeerMas('descDia10', this)">Leer más</span>
   </div>
-
- 
   </div>
 
   <!-- Scripts -->
@@ -527,8 +1067,8 @@
   </div>
 
   <div class="tarjeta">
-    <img src="imagenes/Vinacard.png" alt="Vinalard" />
-    <div class="titulo-medicamento">Vinalard</div>
+    <img src="imagenes/Vinacard.png" alt="Vinacard" />
+    <div class="titulo-medicamento">Vinacard</div>
     <div class="contenido" id="OTC15">
       <p> es una vitamina liposoluble que se disuelve en la grasa y resulta esencial para el organismo dado que es un antioxidante que ayuda a proteger los ácidos grasos..</p>
     </div>
@@ -672,26 +1212,602 @@
 
   </div>
 
-  <!-- Scripts -->
-  <script>
-    function mostrarCategoria(id) {
-      const secciones = document.querySelectorAll('.subtarjeta');
-      secciones.forEach(sec => sec.style.display = 'none');
-      document.getElementById(id).style.display = 'flex';
-    }
+  </div>
+  <!-- Analgesicos -->
+  <div id="Analgesicos" class="subtarjeta">
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Acordia</div>
+      <div class="contenido" id="analg2">
+        <p>Medicamento utilizado para aliviar el dolor y la inflamación en diversas afecciones musculares y articulares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg2', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Balcobal</div>
+      <div class="contenido" id="analg3">
+        <p>Suplemento de vitamina B12, indicado para tratar deficiencias de cobalamina y mejorar la función neurológica.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg3', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Bergeron</div>
+      <div class="contenido" id="analg4">
+        <p>Medicamento antiinflamatorio y analgésico para el tratamiento de dolores musculares y articulares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg4', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Bergeron R</div>
+      <div class="contenido" id="analg5">
+        <p>Variante de Bergeron, utilizado para aliviar el dolor y la inflamación en procesos reumáticos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg5', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Celecoxib</div>
+      <div class="contenido" id="analg6">
+        <p>Antiinflamatorio no esteroideo (AINE) selectivo, indicado para artritis, dolor agudo y dismenorrea.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg6', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Celerax</div>
+      <div class="contenido" id="analg7">
+        <p>Medicamento para el alivio del dolor muscular, contracturas y espasmos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg7', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Complerol</div>
+      <div class="contenido" id="analg9">
+        <p>Medicamento analgésico y antiinflamatorio para dolores agudos y crónicos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg9', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Diclofenaco.png" alt="Diclofenaco" />
+      <div class="titulo-medicamento">Diclofenaco</div>
+      <div class="contenido" id="analg43">
+        <p>Alivia el dolor y la inflamación en afecciones musculoesqueléticas y articulares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg43', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Diclo K Biotic</div>
+      <div class="contenido" id="analg12">
+        <p>Combinación de diclofenaco y probióticos, indicado para dolor e inflamación con protección gástrica.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg12', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dexketoprofeno</div>
+      <div class="contenido" id="analg10">
+        <p>Antiinflamatorio y analgésico de acción rápida para dolores musculares, articulares y menstruales.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg10', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dexkevitae</div>
+      <div class="contenido" id="analg11">
+        <p>Alivia el dolor leve a moderado y reduce la inflamación en procesos agudos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg11', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dolocoxib</div>
+      <div class="contenido" id="analg13">
+        <p>Antiinflamatorio y analgésico para el tratamiento del dolor agudo y crónico.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg13', this)">Leer más</span>
+    </div>
+    
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dolo Artrisar</div>
+      <div class="contenido" id="analg15">
+        <p>Indicado para el tratamiento del dolor articular y muscular, especialmente en artritis.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg15', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dolo MetaPlex</div>
+      <div class="contenido" id="analg16">
+        <p>Alivia el dolor muscular y articular, y ayuda a reducir la inflamación.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg16', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Dorixina</div>
+      <div class="contenido" id="analg17">
+        <p>Relajante muscular y analgésico para contracturas y dolores musculares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg17', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Diclofenaco.png" alt="Diclofenaco" />
+      <div class="titulo-medicamento">Diclofenaco</div>
+      <div class="contenido" id="analg43">
+        <p>Alivia el dolor y la inflamación en afecciones musculoesqueléticas y articulares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg43', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Enantyum</div>
+      <div class="contenido" id="analg18">
+        <p>Antiinflamatorio y analgésico para dolores agudos, como dolor dental, muscular o menstrual.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg18', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Etoricoxib</div>
+      <div class="contenido" id="analg19">
+        <p>Antiinflamatorio selectivo para el tratamiento de artritis, dolor agudo y crónico.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg19', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Finpal</div>
+      <div class="contenido" id="analg20">
+        <p>Medicamento para el alivio del dolor neuropático y fibromialgia.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg20', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Ibuprofeno 600.png" alt="Ibuprofeno 600" />
+      <div class="titulo-medicamento">Ibuprofeno 600</div>
+      <div class="contenido" id="analg41">
+        <p>Antiinflamatorio no esteroideo (AINE) usado para aliviar dolor leve a moderado, fiebre e inflamación.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg41', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Klosara</div>
+      <div class="contenido" id="analg8">
+        <p>Utilizado para el tratamiento del dolor e inflamación en afecciones musculoesqueléticas.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg8', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Loxofen</div>
+      <div class="contenido" id="analg21">
+        <p>Antiinflamatorio y analgésico para dolores musculares, articulares y menstruales.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg21', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Meloxicam 15.png" alt="Meloxicam  15" />
+      <div class="titulo-medicamento">Meloxicam 15</div>
+      <div class="contenido" id="analg1">
+        <p>Antiinflamatorio no esteroideo (AINE) para el tratamiento del dolor y la inflamación.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg1', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Melatax</div>
+      <div class="contenido" id="analg22">
+        <p>Medicamento para el tratamiento del dolor y la inflamación en enfermedades reumáticas.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg22', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Meloxil</div>
+      <div class="contenido" id="analg23">
+        <p>Antiinflamatorio no esteroideo para el alivio del dolor y la inflamación.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg23', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Meneparol</div>
+      <div class="contenido" id="analg24">
+        <p>Utilizado para aliviar síntomas de la menopausia y dolores asociados.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg24', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Mioflex</div>
+      <div class="contenido" id="analg25">
+        <p>Relajante muscular para contracturas y dolores musculares.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg25', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Mioflex B</div>
+      <div class="contenido" id="analg26">
+        <p>Relajante muscular con vitaminas del complejo B para contracturas y dolor muscular.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg26', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Mioflex Forte</div>
+      <div class="contenido" id="analg27">
+        <p>Relajante muscular de acción fuerte para contracturas severas y dolor intenso.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg27', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Naproxeno.png" alt="Naproxeno" />
+      <div class="titulo-medicamento">Naproxeno</div>
+      <div class="contenido" id="analg42">
+        <p>Medicamento antiinflamatorio y analgésico para dolores musculares, articulares y menstruales.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg42', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Nexar</div>
+      <div class="contenido" id="analg28">
+        <p>Medicamento para el alivio del dolor neuropático y trastornos neurológicos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg28', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Paracetamol 500.png" alt="Paracetamol 500" />
+      <div class="titulo-medicamento">Paracetamol 500</div>
+      <div class="contenido" id="analg40">
+        <p>Analgesico y antipirético utilizado para aliviar el dolor y reducir la fiebre.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg40', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Piroxicam</div>
+      <div class="contenido" id="analg29">
+        <p>Antiinflamatorio no esteroideo para el tratamiento de artritis y dolor muscular.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg29', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Pregabalina</div>
+      <div class="contenido" id="analg30">
+        <p>Indicado para el tratamiento del dolor neuropático, fibromialgia y ansiedad generalizada.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg30', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Profenol</div>
+      <div class="contenido" id="analg31">
+        <p>Medicamento analgésico y antiinflamatorio para dolores agudos y crónicos.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg31', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Relax Complex</div>
+      <div class="contenido" id="analg32">
+        <p>Relajante muscular para contracturas leves y dolor muscular.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg32', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Relax Complex Forte</div>
+      <div class="contenido" id="analg33">
+        <p>Relajante muscular de acción fuerte para contracturas severas y dolor intenso.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg33', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Sinedol Forte</div>
+      <div class="contenido" id="analg34">
+        <p>Analgésico potente para el alivio de dolores intensos y fiebre alta.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg34', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/Tramadol.png" alt="Tramadol" />
+      <div class="titulo-medicamento">Tramadol</div>
+      <div class="contenido" id="analg44">
+        <p>Analgésico opioide para el tratamiento del dolor moderado a severo bajo prescripción médica.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg44', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Supercox</div>
+      <div class="contenido" id="analg35">
+        <p>Antiinflamatorio y analgésico para el tratamiento de dolor agudo y crónico.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg35', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Valcobal</div>
+      <div class="contenido" id="analg36">
+        <p>Suplemento de vitamina B12 para tratar deficiencias y mejorar la función nerviosa.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg36', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Vitomagnus</div>
+      <div class="contenido" id="analg37">
+        <p>Suplemento multivitamínico para mejorar el estado general y la energía.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg37', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Vitomax</div>
+      <div class="contenido" id="analg38">
+        <p>Complejo vitamínico para fortalecer el sistema inmunológico y la vitalidad.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg38', this)">Leer más</span>
+    </div>
+    <div class="tarjeta">
+      <div class="titulo-medicamento">Voltaren</div>
+      <div class="contenido" id="analg39">
+        <p>Antiinflamatorio y analgésico para el alivio del dolor muscular, articular y lesiones deportivas.</p>
+      </div>
+      <span class="leer-mas" onclick="toggleLeerMas('analg39', this)">Leer más</span>
 
-    function toggleLeerMas(id, btn) {
-      const texto = document.getElementById(id);
-      if (texto.classList.contains('expandido')) {
-        texto.classList.remove('expandido');
-        btn.textContent = 'Leer más';
-      } else {
-        texto.classList.add('expandido');
-        btn.textContent = 'Leer menos';
-      }
+    </div>
+  </div>
+<!-- Vitaminas y antioxidantes -->
+<div id="Vitaminas_y_antioxidantes" class="subtarjeta">
+  <!-- api e -->
+  <div class="tarjeta">
+    <img src="imagenes/Api e.png" alt="Api e" />
+    <div class="titulo-medicamento">Api e</div>
+    <div class="contenido" id="vit1">
+      <p>Suplemento de vitamina E, antioxidante que ayuda a proteger las células del daño, fortalece el sistema inmunológico y contribuye a la salud de la piel y los ojos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit1', this)">Leer más</span>
+  </div>
+
+  <!-- Apeten -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Apeten</div>
+    <div class="contenido" id="vit2">
+      <p>Estimulante del apetito para niños y adultos. Ayuda a mejorar la nutrición en estados de debilidad o anorexia.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit2', this)">Leer más</span>
+  </div>
+
+  <!-- Belivron -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Belivron</div>
+    <div class="contenido" id="vit3">
+      <p>Multivitamínico para combatir carencias nutricionales, fatiga y falta de apetito. Indicado para fortalecer el sistema inmunológico y mejorar el estado general.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit3', this)">Leer más</span>
+  </div>
+
+  <!-- Panda Pediátrico -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Panda Pediátrico</div>
+    <div class="contenido" id="vit4">
+      <p>Multivitamínico infantil para el desarrollo y crecimiento. Contiene vitaminas y minerales que apoyan el metabolismo y la formación de tejidos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit4', this)">Leer más</span>
+  </div>
+
+  <!-- Apelvit -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Apelvit</div>
+    <div class="contenido" id="vit5">
+      <p>Estimulante del apetito y multivitamínico. Tratamiento de deficiencias vitamínicas causadas por enfermedades o mala alimentación.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit5', this)">Leer más</span>
+  </div>
+
+  <!-- Prolyn -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Prolyn</div>
+    <div class="contenido" id="vit6">
+      <p>Vitaminas del complejo B más lisina para niños. Promueve el apetito y el crecimiento adecuado.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit6', this)">Leer más</span>
+  </div>
+
+  <!-- Viovit Jarabe -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Viovit Jarabe</div>
+    <div class="contenido" id="vit7">
+      <p>Multivitamínico para niños, rico en vitaminas A, C, D y complejo B. Ayuda al fortalecimiento general y sistema inmunológico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit7', this)">Leer más</span>
+  </div>
+
+  <!-- Viovit Tabletas -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Viovit Tabletas</div>
+    <div class="contenido" id="vit8">
+      <p>Multivitamínico en tabletas para adultos. Provee vitaminas y minerales esenciales para la salud diaria.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit8', this)">Leer más</span>
+  </div>
+
+  <!-- Crecivit Gotas -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Crecivit Gotas</div>
+    <div class="contenido" id="vit9">
+      <p>Suplemento vitamínico con vitaminas A, D, E, C y complejo B en gotas. Indicado para prevenir y tratar deficiencias vitamínicas en niños.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit9', this)">Leer más</span>
+  </div>
+  <!-- Crecivit Jarabe -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Crecivit Jarabe</div>
+    <div class="contenido" id="vit9b">
+      <p>Suplemento multivitamínico en jarabe con vitaminas A, D, E, C y complejo B. Ayuda al crecimiento y desarrollo saludable de los niños.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit9b', this)">Leer más</span>
+  </div>
+
+  <!-- Vitelnum -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vitelnum</div>
+    <div class="contenido" id="vit10">
+      <p>Cápsulas o perlas multivitamínicas con acción antioxidante. Mejora el estado general y protege las células del daño oxidativo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit10', this)">Leer más</span>
+  </div>
+
+  <!-- Vicasol -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vicasol</div>
+    <div class="contenido" id="vit11">
+      <p>Solución gotas pediátricas con vitaminas A, D3 y C. Fortalece el sistema inmunológico y apoya el desarrollo infantil.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit11', this)">Leer más</span>
+  </div>
+
+  <!-- Vicadel -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vicadel</div>
+    <div class="contenido" id="vit12">
+      <p>Vitaminas A, D y E en gotas o tabletas para niños y adultos. Refuerza el sistema inmunológico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit12', this)">Leer más</span>
+  </div>
+
+  <!-- Vicadel FN -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Vicadel FN</div>
+    <div class="contenido" id="vit13">
+      <p>Fórmula especial para niños con vitaminas A y D. Facilita la administración pediátrica.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit13', this)">Leer más</span>
+  </div>
+
+  <!-- Oxivit -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Oxivit</div>
+    <div class="contenido" id="vit14">
+      <p>Cápsulas antioxidantes para adultos. Protege contra el estrés oxidativo y mejora energía.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit14', this)">Leer más</span>
+  </div>
+
+  <!-- Preoxid -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Preoxid</div>
+    <div class="contenido" id="vit15">
+      <p>Suplemento antioxidante en cápsulas. Ayuda en la protección celular y mejora el sistema inmune.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit15', this)">Leer más</span>
+  </div>
+
+  <!-- Inmuvit Q10 -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Inmuvit Q10</div>
+    <div class="contenido" id="vit16">
+      <p>Contiene Coenzima Q10 y vitaminas antioxidantes. Aumenta la energía celular y apoyo inmunológico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit16', this)">Leer más</span>
+  </div>
+
+  <!-- Aquarit -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Aquarit</div>
+    <div class="contenido" id="vit17">
+      <p>Multivitamínico con omega-3 y antioxidantes para niños. Promueve desarrollo cognitivo y físico.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit17', this)">Leer más</span>
+  </div>
+
+  <!-- Suplerit -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Suplerit</div>
+    <div class="contenido" id="vit18">
+      <p>Tabletas multivitamínicas con hierro. Combate anemia y mejora niveles de energía.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit18', this)">Leer más</span>
+  </div>
+
+  <!-- Buclicil Hierro -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Buclicil Hierro</div>
+    <div class="contenido" id="vit19">
+      <p>Jarabe con hierro y vitaminas para anemia. Mejora la producción de glóbulos rojos.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit19', this)">Leer más</span>
+  </div>
+
+  <!-- Suplevit Prenatal -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Suplevit Prenatal</div>
+    <div class="contenido" id="vit20">
+      <p>Multivitamínico para embarazadas. Contiene ácido fólico, hierro y vitaminas esenciales para gestación.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit20', this)">Leer más</span>
+  </div>
+
+  <!-- Viovit Prenatal -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Viovit Prenatal</div>
+    <div class="contenido" id="vit21">
+      <p>Multivitamínico especializado para gestantes. Apoya desarrollo fetal y salud materna.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit21', this)">Leer más</span>
+  </div>
+
+  <!-- Falcifor Prenatal -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Falcifor Prenatal</div>
+    <div class="contenido" id="vit22">
+      <p>Suplemento con ácido fólico y vitaminas para embarazo. Previene anemia y defectos del tubo neural.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit22', this)">Leer más</span>
+  </div>
+
+  <!-- Euro Calcio Natal -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Euro Calcio Natal</div>
+    <div class="contenido" id="vit23">
+      <p>Tabletas con calcio y vitaminas prenatales. Favorece la formación ósea del bebé y salud ósea materna.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit23', this)">Leer más</span>
+  </div>
+
+  <!-- Matervit -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Matervit</div>
+    <div class="contenido" id="vit24">
+      <p>Multivitamínico para embarazadas y lactantes. Aporta nutrientes necesarios durante y después del embarazo.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit24', this)">Leer más</span>
+  </div>
+
+  <!-- Premamá -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Premamá</div>
+    <div class="contenido" id="vit25">
+      <p>Suplemento vitamínico para gestación. Incluye ácido fólico, hierro y vitaminas.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit25', this)">Leer más</span>
+  </div>
+
+  <!-- Natale -->
+  <div class="tarjeta">
+    <div class="titulo-medicamento">Natale</div>
+    <div class="contenido" id="vit26">
+      <p>Complejo prenatal con ácido fólico y vitaminas esenciales. Apoya el desarrollo fetal y bienestar materno.</p>
+    </div>
+    <span class="leer-mas" onclick="toggleLeerMas('vit26', this)">Leer más</span>
+  </div>
+</div>
+
+<style>
+  /* Oculta el contenido inicialmente */
+  .contenido {
+    display: none;
+  }
+  /* Muestra el contenido cuando está expandido */
+  .contenido.expandido {
+    display: block;
+  }
+  /* Opcional: estilo para el botón leer más */
+  .leer-mas {
+    color: blue;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
+
+<script>
+  function toggleLeerMas(id, btn) {
+    const texto = document.getElementById(id);
+    if (texto.classList.contains('expandido')) {
+      texto.classList.remove('expandido');
+      btn.textContent = 'Leer más';
+    } else {
+      texto.classList.add('expandido');
+      btn.textContent = 'Leer menos';
     }
-  </script>
-  
+  }
+</script>
 
 </body>
 </html>
