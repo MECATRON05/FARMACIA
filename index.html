@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Farmacia ELAM</title>
-  
+
   <!-- Estilos NicePage -->
   <link rel="stylesheet" href="nicepage.css" media="screen" />
   <link rel="stylesheet" href="index.css" media="screen" />
   <script class="u-script" type="text/javascript" src="jquery.js" defer></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer></script>
-  
+
   <style>
     * {
       margin: 0;
@@ -18,17 +18,19 @@
       box-sizing: border-box;
     }
 
-    body {
-      height: 100vh;
-      background-image: url('imagenes/logo elam.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-    }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fc007e; /* Fondo rosado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black; /* Para que los textos se vean en el fondo rosado */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
     .contenido {
       padding: 40px;
       max-width: 700px;
@@ -40,13 +42,13 @@
     .contenido h1 {
       font-size: 36px;
       margin-bottom: 10px;
-      color: white;
+      color: #1f1da0; /* Color de texto */
     }
 
     .contenido p {
       font-size: 32px;
       font-weight: bold;
-      color: #ff69b4; /* rosado */
+      color: #000000; /* rosado */
       margin-top: 10px;
     }
 
@@ -60,12 +62,12 @@
     }
 
     .tarjeta {
-      background-color: #950909; /* fondo blanco */
+      background-color: #ffffff;
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease;
-      color: #000000; /* texto negro */
+      color: #000000;
     }
 
     .tarjeta:hover {
@@ -80,8 +82,8 @@
 
     .tarjeta .contenido {
       padding: 20px;
-      background-color: #ffffff; /* fondo blanco puro */
-      color: #000000; /* texto negro */
+      background-color: #ffffff;
+      color: #1f1da0; /* Color de texto */
     }
 
     .tarjeta .contenido h3 {
@@ -93,6 +95,28 @@
     .tarjeta .contenido p {
       font-size: 15px;
       line-height: 1.6;
+    }
+
+    /* NUEVO: estilo para los valores */
+    .valores-contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    /*para el apartado de los valores*/
+    .valor-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgb(255, 255, 255);
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #1f1da0;
+      min-width: 150px;
+      text-align: center;
     }
   </style>
 </head>
@@ -108,7 +132,11 @@
               <use xlink:href="#menu-hamburger"></use>
             </svg>
             <svg class="u-svg-content" id="menu-hamburger" viewBox="0 0 16 16">
-              <g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g>
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
             </svg>
           </a>
         </div>
@@ -137,45 +165,56 @@
 
   <!-- Encabezado principal -->
   <section class="contenido">
-     <div class="tarjeta"></div>
+    <div class="tarjeta"></div>
     <h1>FARMACIA ELAM</h1>
     <p>DONDE TU SALUD CUENTA!</p>
   </section>
 
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-<section class="contenido">
-  <h1 class="titulo">Misión</h1>
-  <p class="descripcion">Brindar atención farmacéutica de calidad, promoviendo la salud y el bienestar de nuestros pacientes.</p>
-</section>
 
-<section class="contenido">
-  <h1 class="titulo">Visión</h1>
-  <p class="descripcion">Ser líderes en atención farmacéutica, reconocidos por nuestra calidad y compromiso con la salud de nuestros pacientes.</p>
-</section>
+  <section class="contenido">
+    <h1 class="titulo">Misión</h1>
+    <p class="descripcion">
+      SER UNA EMPRESA DE GESTIÓN SALUD QUE SUPLA LA NECESIDAD DE LA POBLACIÓN PARA ADQUIRIR PRODUCTOS DE BUENA CALIDAD Y CON LOS MEJORES PRECIOS DEL MERCADO, CON EL COMPROMISO DE MANTENER LA SOLIDARIDAD HACIA ELLOS.
+    </p>
+  </section>
 
-<section class="contenido">
+  <section class="contenido">
+    <h1 class="titulo">Visión</h1>
+    <p class="descripcion">
+      NUESTRO PROPÓSITO ES SER LA FARMACIA LÍDER DE LA REGIÓN NOROESTE, QUE CUMPLA CON LOS MÁS ALTOS ESTÁNDARES, POR MEDIO DE UN EXCEPCIONAL SERVICIO A NUESTROS CLIENTES.
+    </p>
+  </section>
+
+<section class="contenido valores-section">
   <h1 class="titulo">Valores</h1>
-  <p class="descripcion">Compromiso, Empatía, Responsabilidad y Ética.</p>
+  <p class="descripcion">
+    COMO INSTITUCIÓN ESTAMOS COMPROMETIDOS CON LOS PRINCIPIOS BÁSICOS RESALTADOS EN NUESTRA SOCIEDAD, SIENDO ESTOS NUESTROS PILARES PARA GARANTIZAR UN SERVICIO GENERAL EFICIENTE, BASADOS EN:
+  </p>
+
+  <div class="valores-contenedor">
+    <div class="valor-item">Seguridad</div>
+    <div class="valor-item">Atención</div>
+    <div class="valor-item">Confianza</div>
+    <div class="valor-item">Higiene</div>
+    <div class="valor-item">Calidad</div>
+    <div class="valor-item">Honestidad</div>
+    <div class="valor-item">Responsabilidad</div>
+    <div class="valor-item">Asesoramiento</div>
+  </div>
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </section>
 
 

@@ -21,22 +21,33 @@
     margin-top: 20px;
   }
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('imagenes/logo elam.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 40px;
-    margin: 0;
-    position: relative;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fc007e; /* Fondo rosado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black; /* Para que los textos se vean en el fondo rosado */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Logo en la esquina */
+.logo-esquina {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px; /* Ajusta el tamaño del logo */
+  height: auto;
+  z-index: 999; /* Para que esté por encima de todo */
+}
+
 
   .boton-principal {
     padding: 15px 25px;
-    background-color: #e74c3c;
+    background-color: #1f1da0;
     color: white;
     border: none;
     border-radius: 8px;
@@ -49,7 +60,7 @@
   }
 
   .boton-principal:hover {
-    background-color: #c0392b;
+    background-color: #1f1da0;
   }
 
 
@@ -83,7 +94,7 @@
     .titulo-medicamento {
       font-size: 20px;
       font-weight: bold;
-      color: #e74c3c;
+      color: #1f1da0;
       margin-top: 10px;
     }
 
@@ -101,7 +112,7 @@
 
     .leer-mas {
       display: block;
-      color: #3498db;
+      color: #1f1da0;
       font-weight: bold;
       cursor: pointer;
       padding: 5px 0;
@@ -451,7 +462,7 @@
     max-height: 300px; /* suficiente para mostrar todo el texto */
   }
   .leer-mas {
-    color: #007bff;
+    color: #1f1da0;
     cursor: pointer;
     user-select: none;
     display: inline-block;

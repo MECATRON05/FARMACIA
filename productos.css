@@ -1,8 +1,13 @@
+
 body {
-  background-image: url('imagenes/logo elam.jpg');
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fc007e; /* Fondo rosado */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
+  color: black; /* Para que los textos se vean en el fondo rosado */
   margin: 0;
+  padding: 0;
+  position: relative;
 }
