@@ -1,13 +1,24 @@
 /* === Variables principales === */
 :root {
-  --primary-blue: #00046e;        /* Azul oscuro, profesional */
-  --primary-pink: #fc007e;        /* Rosado médico suave */
+  --primary-blue: #2728a8;        /* Azul oscuro, profesional */
+  --primary-pink: #ca116b;        /* Rosado médico suave */
   --white: #ffffff;               /* Blanco */
   --text-white: #ffffff;           /* Gris oscuro para texto */
   --text-white: #ffffff;          /* Blanco para texto claro */
   --light-white: #F0F8FF;          /* Azul cielo claro */
-  --light-pink: #fc007e;          /* Rosado claro suave */
+  --light-pink: #ca116b;          /* Rosado claro suave */
   --background: #000000;          /* (Ya no se usa, reemplazado por light-pink) */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo-img {
+  width: 50px; /* Cambia el tamaño según necesites */
+  height: auto;
 }
 
 /* Estilo general de la barra */
@@ -405,7 +416,7 @@ footer {
   }
 
   .nav-links a:hover {
-    background-color: #2734c0;
+    background-color: #2728a8;
   }
 }
 
@@ -498,7 +509,7 @@ footer {
 #form-comentarios label {
   display: block;
   font-weight: bold;
-  color: #00046e; /* Azul profesional */
+  color: #2728a8; /* Azul profesional */
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
@@ -515,12 +526,12 @@ footer {
 
 #form-comentarios textarea:focus {
   outline: none;
-  border-color: #fc007e; /* Rosado */
-  box-shadow: 0 0 10px rgba(252, 0, 126, 0.3);
+  border-color: #ca116b; /* Rosado */
+  box-shadow: rgba(203,17,108,255) 0 0 5px;
 }
 
 #form-comentarios button {
-  background: linear-gradient(135deg, #fc007e, #00046e);
+  background: linear-gradient(135deg, #ca116b, #2728a8);
   color: #ffffff;
   border: none;
   padding: 0.8rem 1.5rem;
