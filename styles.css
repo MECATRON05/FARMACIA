@@ -10,6 +10,7 @@
   --background: #000000;          /* (Ya no se usa, reemplazado por light-pink) */
 }
 
+
 .navbar-left {
   display: flex;
   align-items: center; /* Centra verticalmente la imagen y el texto */
