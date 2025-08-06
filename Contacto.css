@@ -1,0 +1,17 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+
+  
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fc007e; /* Fondo rosado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black; /* Para que los textos se vean en el fondo rosado */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+}
