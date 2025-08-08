@@ -1,75 +1,3 @@
-/* Estilo general de la barra */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background-color: var(--primary-blue);
-  color: white;
-}
-
-/* Nombre ELAM FARMACIA en la izquierda */
-.navbar-left .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-}
-
-/* Enlaces a la derecha */
-.navbar-right ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-right a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.navbar-right a:hover {
-  color: var(--light-pink);
-}
-
-.contenedor-botones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  padding: 30px 20px;
-  background-color: #f9f9f9; /* Cambia si necesitas otro fondo */
-}
-
-.boton-principal {
-  background: linear-gradient(135deg, #2728a8, #ca116b);
-  color: white;
-  border: none;
-  padding: 14px 25px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  min-width: 180px;
-  text-align: center;
-}
-
-.boton-principal:hover {
-  background: linear-gradient(135deg, #66BB6A, #388E3C);
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
-
-.boton-principal:active {
-  transform: scale(0.97);
-}
-
 /* Contenedor de tarjetas */
 .contenedor-tarjetas {
   display: flex;
@@ -79,25 +7,33 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch; /* Hace que todas las tarjetas tengan la misma altura */
 }
 
 /* Tarjeta individual */
 .tarjeta {
   background-color: white;
-  width: 250px;
+  width: 250px;          /* ancho fijo para filas */
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
+
+  height: auto !important;          /* Altura según contenido */
+  overflow: visible !important;     /* Mostrar todo el contenido */
+  display: flex;
+  flex-direction: column;
 }
+
+/* Efecto hover */
 .tarjeta:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* Mejora imágenes para calidad y proporción */
+/* Imágenes */
 .tarjeta img {
   width: 100%;
   height: auto;
@@ -108,6 +44,7 @@
   display: block;
 }
 
+/* Título */
 .titulo-medicamento {
   font-weight: bold;
   font-size: 1.1rem;
@@ -115,21 +52,14 @@
   margin-bottom: 0.5rem;
 }
 
+/* Contenido de texto */
 .contenido {
   font-size: 0.9rem;
-  color: #ca116b; /* Rosado suave */
+  color: #000000;
   line-height: 1.3;
-}
 
-/* Opcional: para ocultar categorías si usas la clase */
-.categoria {
-  display: none;
-  margin-top: 20px;
-}
-
-.card-img {
-  width: auto;
-  height: auto;
-  max-width: 100%; /* opcional: evita que se desborde de la tarjeta */
-  display: block;
+  white-space: normal !important;   /* Saltos de línea normales */
+  overflow-wrap: break-word;        /* Corta palabras largas si es necesario */
+  max-height: none !important;      /* Sin límite de altura */
+  overflow: visible !important;     /* No ocultar texto */
 }
