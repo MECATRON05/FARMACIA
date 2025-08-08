@@ -101,18 +101,17 @@
 
         <h1 class="logo">FARMACIA ELAM</h1>
       </div>
-      
-    </div>
-    <div class="navbar-right">
-            <ul class="nav-links">
-  <li><a href="index.html#inicio">Inicio</a></li>
-  <li><a href="index.html#servicios">Servicios</a></li>
-  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
-  <li><a href="index.html#nosotros">Nosotros</a></li>
-  <li><a href="index.html#contacto">Contactos</a></li>
- <p><a href="https://www.instagram.com/farmaciaelam/" target="_blank">Instagram</a></p>
-</ul>
-
+      <div class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#contacto">Contactos</a></li>
+          <p><a href="https://www.instagram.com/farmaciaelam/" target="_blank">Instagram</a></p>
+        </ul>
+      </div>
+    </nav>
     </header>
 
     
@@ -136,30 +135,7 @@
         <button class="boton-principal" onclick="mostrarCategoria('digestivo')">Alivio digestivo</button>
       </div>
 
-
-      
-   
-
-    </section>
-  </main>
-
-  <script>
-function mostrarCategoria(id) {
-  const subtarjetas = document.querySelectorAll('.subtarjeta');
-
-  subtarjetas.forEach((elemento) => {
-    elemento.classList.remove('activa'); // ocultar todas
-  });
-
-  const activa = document.getElementById(id);
-  if (activa) {
-    activa.classList.add('activa'); // mostrar la seleccionada
-  }
-}
-
-  </script>
-</body>
-</html>
+      <!-- Contenedor de tarjetas -->
 
 <!-- ALIVIO DIGESTIVO -->
 <div id="digestivo" class="subtarjeta">
