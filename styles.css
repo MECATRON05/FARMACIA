@@ -10,6 +10,31 @@
   --background: #000000;          /* (Ya no se usa, reemplazado por light-pink) */
 }
 
+.btn-maps {
+  background: linear-gradient(135deg, #ca116b, #2728a8); /* Igual que el botón del formulario */
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-maps:hover,
+.btn-maps:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+
 
 .navbar-left {
   display: flex;
