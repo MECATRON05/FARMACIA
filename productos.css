@@ -2,29 +2,28 @@
 .contenedor-tarjetas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: flex-start; /* Alinea arriba */
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: stretch; /* Hace que todas las tarjetas tengan la misma altura */
 }
 
 /* Tarjeta individual */
 .tarjeta {
   background-color: white;
-  width: 250px;          /* ancho fijo para filas */
+  width: 250px; /* Tamaño fijo para todas */
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0,0,0,0.1);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
-
-  height: auto !important;          /* Altura según contenido */
-  overflow: visible !important;     /* Mostrar todo el contenido */
-  display: flex;
+  display: flex; /* 🔹 Ahora usamos flex para mantener estructura interna */
   flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* 🔹 Todas las tarjetas de la fila se igualan */
 }
 
 /* Efecto hover */
@@ -37,11 +36,10 @@
 .tarjeta img {
   width: 100%;
   height: auto;
+  max-height: 180px;
   object-fit: contain;
   border-radius: 12px;
   margin-bottom: 0.8rem;
-  max-height: 180px;
-  display: block;
 }
 
 /* Título */
@@ -57,9 +55,8 @@
   font-size: 0.9rem;
   color: #000000;
   line-height: 1.3;
-
-  white-space: normal !important;   /* Saltos de línea normales */
-  overflow-wrap: break-word;        /* Corta palabras largas si es necesario */
-  max-height: none !important;      /* Sin límite de altura */
-  overflow: visible !important;     /* No ocultar texto */
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex-grow: 1; /* 🔹 Hace que el texto ocupe el espacio sobrante */
 }
