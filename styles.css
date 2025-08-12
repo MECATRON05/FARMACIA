@@ -283,7 +283,7 @@ nav {
   border-radius: 10px;
 }
 
-/* === CONTACT === */
+/* === CONTACTOS === */
 .contact {
   padding: 6rem 0;
   background: var(--white); /* Fondo blanco para mayor contraste */
@@ -297,9 +297,9 @@ nav {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+justify-content: center; /* Centra horizontalmente */
+  align-items: center;
 }
 
 .contact-info {
@@ -522,7 +522,7 @@ footer {
 
 /* === FORMULARIO DE COMENTARIOS === */
 #form-comentarios {
-  background: #ffffff; /* Fondo blanco */
+  background: #2728a8; /* Fondo azul */
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
