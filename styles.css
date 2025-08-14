@@ -9,6 +9,97 @@
   --light-pink: #ca116b;          /* Rosado claro suave */
   --background: #000000;          /* (Ya no se usa, reemplazado por light-pink) */
 }
+/* Centrar texto dentro de todas las tarjetas */
+.card {
+  text-align: center;       /* centra títulos, párrafos y listas */
+  display: flex;            /* para que el contenido se alinee correctamente */
+  flex-direction: column;   /* columna dentro de la tarjeta */
+  justify-content: center;  /* centra verticalmente si quieres */
+  align-items: center;      /* centra horizontalmente */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #2e2ed9; /* mantén tu color de tarjeta */
+  color: #ffffff;            /* texto blanco */
+}
+
+/* Ajustar títulos y párrafos */
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p, 
+.card ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card ul {
+  padding-left: 0; /* quita sangría predeterminada de la lista */
+  list-style: none; /* opcional, si quieres bullets personalizados */
+}
+
+.card ul li {
+  margin: 4px 0;
+}
+
+
+#nosotros h2 {
+  font-size: 24px; /* ajusta a lo que necesites */
+}
+#nosotros p {
+  font-size: 16px; /* ajusta según prefieras */
+  line-height: 1.5; /* hace que sea más legible */
+}
+#nosotros .card h2 {
+  font-size: 20px; /* título de la tarjeta */
+}
+
+#nosotros .card p,
+#nosotros .card ul li {
+  font-size: 14px; /* texto y lista dentro de la tarjeta */
+  line-height: 1.4;
+}
+
+footer {
+  background: #f8f8f8;   /* color del fondo */
+  padding: 20px;
+  text-align: center;    /* centra el texto */
+}
+
+/* Bloque del texto arriba */
+.footer-section {
+  margin-bottom: 20px;
+}
+
+/* Lista vertical centrada */
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* uno debajo del otro */
+  align-items: center;    /* centrado */
+  gap: 10px;
+  margin: 0 0 20px 0;     /* espacio con el copy */
+  padding: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #ca116b;
+}
+
+/* Copy abajo */
+.footer-copy {
+  font-size: 14px;
+  color: #000000;
+}
+
 
 .btn-maps {
   background: linear-gradient(135deg, #ca116b, #2728a8); /* Igual que el botón del formulario */

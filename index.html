@@ -58,24 +58,29 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <img src="imagenes/img de navegacion.jpg" alt="Logo Farmacia ELAM" class="logo-img">
-        <h1 class="logo">FARMACIA ELAM</h1>
-      </div>
-      <div class="navbar-right">
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contactos</a></li>
-          <li><a href="https://www.instagram.com/farmaciaelam/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+ <header>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="imagenes/img de navegacion.jpg" alt="Logo Farmacia ELAM" class="logo-img">
+      <h1 class="logo">FARMACIA ELAM</h1>
+    </div>
+    <div class="navbar-right">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contactos</a></li>
+        <li>
+          <a href="https://www.instagram.com/farmaciaelam/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                 alt="Instagram" width="24" height="24">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <section id="servicios" class="services">
     <div class="container">
@@ -144,10 +149,10 @@
     </div>
  <section id="contacto" class="contact">
   <div class="container">
-    <h2>Contáctanos</h2>
+   
     <div class="contact-content">
       <div class="contact-info">
-        <h3>Información de Contacto</h3>
+        <h3>Información de Contactos</h3>
 
         <!-- Dirección -->
         <div class="contact-item">
@@ -213,27 +218,43 @@
 </section>
 
 
-
-
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>FARMACIA ELAM</h3>
-          <p>Tu farmacia de confianza en Laguna Salada, comprometida con tu salud y bienestar.</p>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="https://www.instagram.com/farmaciaelam/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-      <p>&copy; 2025 FARMACIA ELAM. Todos los derechos reservados.</p>
+<footer>
+  <div class="container">
+    <!-- Texto arriba -->
+    <div class="footer-section">
+      <h3>FARMACIA ELAM</h3>
+      <p>Tu farmacia de confianza en Laguna Salada, comprometida con tu salud y bienestar.</p>
     </div>
-  </footer>
+
+    <!-- Nav en el medio -->
+    <ul class="footer-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a class="u-button-style u-nav-link" href="Productos.html">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contactos</a></li>
+      <li>
+        <a href="https://www.instagram.com/farmaciaelam/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+               alt="Instagram" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+
+    <!-- ===== FOOTER ===== -->
+<footer style="background-color:#2728a8; color:#fff; padding:20px 0; text-align:center;">
+  <div class="footer-contenido">
+    <p>&copy; 2025 Farmacia ELAM. Todos los derechos reservados.</p>
+    <p>
+      <a href="politica-privacidad.html" target="_blank" style="color:#ffffff; text-decoration:underline;">
+        Política de Privacidad
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
