@@ -1,13 +1,12 @@
 /* === Variables principales === */
 :root {
-  --primary-blue: #2728a8;        /* Azul oscuro, profesional */
-  --primary-pink: #ca116b;        /* Rosado médico suave */
-  --white: #ffffff;               /* Blanco */
-  --text-white: #ffffff;           /* Gris oscuro para texto */
-  --text-white: #ffffff;          /* Blanco para texto claro */
-  --light-white: #F0F8FF;          /* Azul cielo claro */
-  --light-pink: #ca116b;          /* Rosado claro suave */
-  --background: #000000;          /* (Ya no se usa, reemplazado por light-pink) */
+  --primary-blue: #2728a8;        
+  --primary-pink: #ca116b;        
+  --white: #ffffff;               
+  --text-white: #ffffff;          
+  --light-white: #F0F8FF;          
+  --light-pink: #ca116b;         
+  --background: #000000;          /
 }
 /* Centrar texto dentro de todas las tarjetas */
 .card {
@@ -18,8 +17,8 @@
   align-items: center;      /* centra horizontalmente */
   padding: 20px;
   border-radius: 8px;
-  background-color: #2e2ed9; /* mantén tu color de tarjeta */
-  color: #ffffff;            /* texto blanco */
+  background-color: #2e2ed9;
+  color: #ffffff;            
 }
 
 /* Ajustar títulos y párrafos */
@@ -35,8 +34,8 @@
 }
 
 .card ul {
-  padding-left: 0; /* quita sangría predeterminada de la lista */
-  list-style: none; /* opcional, si quieres bullets personalizados */
+  padding-left: 0; 
+  list-style: none; 
 }
 
 .card ul li {
@@ -45,11 +44,11 @@
 
 
 #nosotros h2 {
-  font-size: 24px; /* ajusta a lo que necesites */
+  font-size: 24px; 
 }
 #nosotros p {
-  font-size: 16px; /* ajusta según prefieras */
-  line-height: 1.5; /* hace que sea más legible */
+  font-size: 16px; 
+  line-height: 1.5;
 }
 #nosotros .card h2 {
   font-size: 20px; /* título de la tarjeta */
@@ -79,7 +78,7 @@ footer {
   flex-direction: column; /* uno debajo del otro */
   align-items: center;    /* centrado */
   gap: 10px;
-  margin: 0 0 20px 0;     /* espacio con el copy */
+  margin: 0 0 20px 0;     /* espacio entre tarjetas */
   padding: 0;
 }
 
@@ -102,7 +101,7 @@ footer {
 
 
 .btn-maps {
-  background: linear-gradient(135deg, #ca116b, #2728a8); /* Igual que el botón del formulario */
+  background: linear-gradient(135deg, #ca116b, #2728a8); 
   color: #ffffff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -129,7 +128,7 @@ footer {
 
 .navbar-left {
   display: flex;
-  align-items: center; /* Centra verticalmente la imagen y el texto */
+  align-items: center; /* Esto es para centrar  verticalmente la imagen y el texto */
   gap: 10px; /* Espacio entre la imagen y el texto */
 }
 
@@ -176,7 +175,7 @@ footer {
   color: var(--light-pink);
 }
 
-/* === Reset general === */
+
 * {
   margin: 0;
   padding: 0;
@@ -187,7 +186,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: var(--text-white);
-  background-color: var( --primary-pink); /* ← Fondo general rosado */
+  background-color: var(--primary-pink); /* Fondo general rosado */
 }
 
 .container {
@@ -198,7 +197,7 @@ body {
 
 /* === HEADER === */
 header {
-  background-color: var(--primary-blue); /* ← Header azul sólido */
+  background-color: var(--primary-blue); /* Header azul sólido */
   color: var(--text-light);
   padding: 1rem 0;
   position: sticky;
@@ -245,9 +244,8 @@ nav {
   color: var(--primary-pink);
 }
 
-/* === HERO SECTION === */
 .hero {
-  background: var( --primary-pink); /* Fondo blanco limpio */
+  background: var(--primary-pink);
   padding: 6rem 0;
   text-align: center;
 }
@@ -285,7 +283,7 @@ nav {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* === SERVICES === */
+/* === SERVICIOS === */
 .services {
   padding: 6rem 0;
   background: var(--white);
@@ -344,10 +342,10 @@ nav {
   line-height: 1.6;
 }
 
-/* === ABOUT === */
+
 .about {
   padding: 6rem 0;
-  background: var(--light-blue); /* ← mejor contraste para el texto */
+  background: var(--light-blue); 
 }
 
 .about h2 {
@@ -547,7 +545,7 @@ footer {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: white; /* o el color que usas */
+    color: white; 
    
   }
 
@@ -576,7 +574,6 @@ footer {
 }
 
 
-/* Mantener que body y container no causen scroll horizontal */
 @media (max-width: 1024px), (max-width: 480px) {
   body, html {
     width: 100%;
@@ -628,59 +625,6 @@ footer {
 .about-content > *,
 .contact-content > * {
   animation: fadeInUp 0.6s ease forwards;
-}
-
-/* === FORMULARIO DE COMENTARIOS === */
-#form-comentarios {
-  background: #2728a8; /* Fondo azul */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: left;
-  font-family: 'Arial', sans-serif;
-}
-
-#form-comentarios label {
-  display: block;
-  font-weight: bold;
-  color: #2728a8; /* Azul profesional */
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-#form-comentarios textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  font-size: 1rem;
-  resize: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#form-comentarios textarea:focus {
-  outline: none;
-  border-color: #ca116b; /* Rosado */
-  box-shadow: rgba(203,17,108,255) 0 0 5px;
-}
-
-#form-comentarios button {
-  background: linear-gradient(135deg, #ca116b, #2728a8);
-  color: #ffffff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-weight: bold;
-}
-
-#form-comentarios button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* === COLOR REFERENCE SECTION === */
