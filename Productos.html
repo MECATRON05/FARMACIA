@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="productos.css" />
   <link rel="icon" type="image/png" href="imagenes/favicon-16x16.png">
   <style>
+    
     * {
       box-sizing: border-box;
     }
@@ -65,7 +66,7 @@
     }
 
   .categoria {
-  display: none; /* Oculta todas por defecto */
+  display: none; 
   margin-top: 20px;
 }
 .subtarjeta {
@@ -77,11 +78,11 @@
 }
 
 .subtarjeta {
-  display: none; /* ocultar todas por defecto */
+  display: none;
 }
 
 .subtarjeta.activa {
-  display: flex; /* mostrar solo la activa */
+  display: flex;
 }
 
 
@@ -89,7 +90,7 @@
 </head>
 <body>
 
-<!-- Aquí va el contenido del body -->
+
 
 </body>
 </html>
@@ -122,14 +123,10 @@
 </nav>
 </header>
 
-    
+ 
+  <!-- Botones de categorías -->
+</script>
 
-  <main>
-    <section>
-      
-      
-
-      <!-- Botones de categorías -->
       <div class="contenedor-botones">
         <button class="boton-principal" onclick="mostrarCategoria('cardio')">Cardiovasculares</button>
         <button class="boton-principal" onclick="mostrarCategoria('diabetes')">Antidiabéticos</button>
@@ -145,7 +142,8 @@
 
 
       
-   
+   </body>
+
 
     </section>
   </main>
@@ -170,8 +168,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-</body>
-</html>
+
 
 <!-- ALIVIO DIGESTIVO -->
 <div id="digestivo" class="subtarjeta">
